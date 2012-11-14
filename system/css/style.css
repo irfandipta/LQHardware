@@ -1,0 +1,330 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url(http://fonts.googleapis.com/css?family=Abel|Satisfy);
+
+/*
+	Monochromed: A responsive HTML5 website template by HTML5Templates.com
+	Released for free under the Creative Commons Attribution 3.0 license (html5templates.com/license)
+	Visit http://html5templates.com for more great templates or follow us on Twitter @HTML5T
+*/
+
+/*********************************************************************************/
+/* Global                                                                        */
+/*********************************************************************************/
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #090909 url(images/img01.png) repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	color: #808080;
+	width:100%;
+}
+
+h1, h2{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	color: #4F4F4F;
+}
+
+h3{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	font-size: 16pt;
+	color: #696969;
+}
+
+p, ol, ul {
+	margin-top: 0px;
+}
+
+p {
+	line-height: 200%;
+}
+
+strong {
+	font-weight: 700;
+}
+
+a{
+	color: #09F;
+	text-decoration:none;
+
+}
+a:hover{
+	color:#000;
+	text-decoration:none;
+}
+
+/* Header */
+
+#header-wrapper {
+	overflow: hidden;
+	height: 300px;
+}
+
+/* Page */
+
+#page-wrapper {
+	overflow: hidden;
+	padding: 50px 0px;
+	background: url(images/img02.png) repeat;
+}
+
+/* Footer Content */
+
+#footer-wrapper {
+	overflow: hidden;
+	padding: 50px 0px;
+	background: url(images/img-footer.jpg);
+    background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+#footer-wrapper  p {
+	color:#000000;
+}
+
+#footer-wrapper  a {
+	color:#09F;
+	text-decoration:none;
+}
+
+#footer-wrapper  a:hover {
+	color:#000;
+	text-decoration:none;
+}
+/* Copyright */
+
+#copyright {
+	overflow: hidden;
+	height: 200px;
+}
+
+#copyright p {
+	padding: 50px 0px 0px 0px;
+	text-align: center;
+	font-size: 11pt;
+	color: #4F4F4F;
+}
+
+/* List style */
+
+.list-style1 {
+}
+
+.list-style1 li {
+	padding: 20px 0px 20px 0px;
+	background: url(images/link-style1-divider.png) repeat-x left top;
+}
+
+.list-style1 p {
+	margin: 0px;
+	padding: 0px;
+}
+
+.list-style1 img {
+	float: left;
+	margin-top: 3px;
+	margin-right: 20px;
+}
+
+.list-style1 .posted {
+	padding: 10px 0px 0px 0px;
+	font-size: 8pt;
+	font-style: italic;
+	color: #A2A2A2;
+}
+
+.list-style1 .first {
+	padding-top: 0px;
+	background: none;
+}
+
+/* List style2 */
+
+.list-style2 {
+	margin: 0px;
+	padding: 30px 0px 0px 0px;
+	list-style: none;
+}
+
+.list-style2 li {
+	list-style: none;
+	position: relative;
+	width:120px;
+	height: 30px;
+	padding:0 20px;
+	line-height: 30px;
+	cursor:pointer;
+}
+
+.list-style2 h3:hover{
+    color:#0099FF;
+}
+.list-style2 ul{
+	position: absolute;
+	top:0;
+	left:160px;
+	visibility:hidden; 
+} 
+
+.list-style2 li:hover ul{
+	visibility:visible;
+} 
+
+/* List style3 */
+
+.list-style3 {
+	margin: 0px;
+	padding: 30px 0px 0px 0px;
+	list-style: none;
+}
+
+.list-style3 li {
+	padding: 0px 0px 16px 0px;
+}
+
+.list-style3 a {
+	color: #09F;
+}
+
+
+/* Image style */
+
+.image-style1 {
+	margin-bottom: 20px;
+	padding: 9px;
+	background: #FFFFFF;
+	border: 1px solid #B8B8B8;
+}
+
+/* Button style */
+
+.button-style {
+	text-align: center;
+}
+
+.button-style a {
+	display: inline-block;
+	width: 174px;
+	height: 50px;
+	margin-top: 30px;
+	background: url(images/img04.jpg) no-repeat left top;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	font-size: 14pt;
+	color: #DDDDDD;
+}
+
+/* Button style */
+
+.button-style2 {
+}
+
+.button-style2 a {
+	display: inline-block;
+	width: 174px;
+	height: 50px;
+	margin-top: 30px;
+	background: url(images/img04.jpg) no-repeat left top;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	font-size: 14pt;
+	color: #DDDDDD;
+}
+
+/* Form Style */
+input, textarea { 
+	padding: 9px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	font: normal 13px/100% Verdana, Tahoma, sans-serif;
+	width: 200px;
+	background: #FFFFFF url('bg_form.png') left top repeat-x;
+	background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	}
+
+textarea { 
+	width: 400px;
+	max-width: 400px;
+	height: 150px;
+	line-height: 150%;
+	}
+
+input:hover, textarea:hover,
+
+input:focus, textarea:focus { 
+	border-color: #C9C9C9; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+
+.form label { 
+	margin-left: 10px; 
+	color: #333; 
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	}
+
+.submit input {
+	display: inline-block;
+	width: 100px;
+	height: 45px;
+	margin-top: 10px;
+	background: url(images/img04.jpg) no-repeat left top;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	font-size: 14pt;
+	color: #DDDDDD;
+	}
+
+table.hovertable {
+	font-family: 'Oswald', sans-serif;
+	font-size:14px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+}
+table.hovertable tr th {
+	background-color:#000;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #FFCC00;
+	color:#FFCC00;
+}
+table.hovertable tr {
+	background-color:#fff;
+}
+
+table.hovertable tr:hover {
+	background-color:#FF9;
+}
+table.hovertable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #FFCC00;
+}
+
