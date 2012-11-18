@@ -12,7 +12,7 @@
 			
 			$this->db->where('username',$username);
 			$this->db->where('password',$password);
-			$query = $this->db->get('profil');
+			$query = $this->db->get('user');
 			return $query->result();
 		}
 			

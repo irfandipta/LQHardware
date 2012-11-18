@@ -49,24 +49,6 @@
                     <section id="content">
                         <h2>USER LOGIN</h2>
                         <br><br>
-                       <!--<form class="form" action="">
-                        <table>
-                        <tr class="username">
-                            <td width="100px"><label for="name">Username</label></td>
-                            <td><input type="text" name="name" id="name" /></td>
-                        </tr>
-                        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
-                        <tr class="password">
-                            <td width="100px"><label for="password">Password</label></td>
-                            <td><input type="password" name="password" id="password" /></td>
-                        </tr>
-                        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
-                        <tr class="submit">
-                            <td>&nbsp;</td>
-                            <td colspan="2"><input type="submit" value="LOGIN" /></td>
-                        </tr>
-                        </table>
-                    	</form>-->
                         <?php echo form_open('csecure/usermasuk'); ?>
                         <table>
                         <tr class="username">

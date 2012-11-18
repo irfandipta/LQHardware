@@ -34,8 +34,8 @@
 			<div class="12u" id="menu">
 				<nav class="mobileUI-site-nav">
 					<ul>
-						<li class="first"><a href="">List Item</a></li>
-                        <li><a href="">Upload Item</a></li>
+						<li class="first"><?php echo anchor('csecure/usermasuk','List Item') ?></li>
+                        <li><?php echo anchor('csecure/uploadbarang','Upload Item') ?></li>
                         <li><a href="">Setting Profile</a></li>
                         <li><a href="">Setting Category</a></li>
                         <li><a href="">Testimonial</a></li>
@@ -67,6 +67,13 @@
                                 </tr>
                                 <?php
 									$i = 1;
+									if($daftarbarang->result() == NULL){
+										?>
+										<tr>
+                                        	<td align="center" colspan="7"><p>Empty Table</p></td>
+                                        </tr>
+										<?php
+									}
 									foreach($daftarbarang->result() as $row) :
 									?>
                                     	<tr>
@@ -74,13 +81,13 @@
                                             <td><p><?php echo $row->nama; ?></p></td>
                                             <td align="center"><p><?php echo $row->harga; ?></p></td>
                                             <td><p><?php echo $row->kategori; ?></p></td>
-                                            <td align="center"><p><?php echo $row->diskon; ?></p></td>
                                             <td align="center"><p><?php echo $row->stok; ?></p></td>
+                                            <td align="center"><p><?php echo $row->diskon; ?></p></td>
                                             <td align="center">
                                             	<p>
-													<?php echo anchor('cadmin/editbarang/'.$row->id,'Edit') ?>
+													<?php echo anchor('csecure/editbarang/'.$row->id,'Edit') ?>
                                                     &nbsp;&nbsp;|&nbsp;&nbsp;
-													<?php echo anchor('cadmin/deletebarang/'.$row->id,'Delete') ?>
+													<?php echo anchor('csecure/deletebarang/'.$row->id,'Delete') ?>
                                                 </p>
                                             </td>
                                         </tr>
@@ -91,7 +98,6 @@
                             </table>
                             <br><br>
                             <?php echo $this->pagination->create_links();?>
-                        <p><a href="#" > Previous Item </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#" > Next Item </a></p>
                         </section>
 					</div>
 				</div>
